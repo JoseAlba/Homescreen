@@ -1,0 +1,366 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en" class="noie"> <!--<![endif]-->
+<head>
+    <title>Turn.js: The page flip effect in HTML5</title>
+    <meta name="viewport" content="width=1200" />
+    <meta name="keywords" content="page,flip,pages,effect,flipbook,flipboard,jquery,html5,book,magazine,newspaper,ipad,iphone,android,ios" />
+    <meta name="description" content="Turn.js makes a beautiful page turning effect using HTML5 and jQuery" />
+    <link rel="icon" type="image/png" href="pics/favicon.png" />
+    <link type="text/css" rel="stylesheet" href="css/jquery.ui.css"></link>
+    <link type="text/css" rel="stylesheet" href="css/default.css"></link>
+    <script type="text/javascript" src="extras/all.js"></script>
+    <script type="text/javascript" src="lib/hash.js"></script>
+    <script type="text/javascript" src="lib/turn.min.js"></script>
+    <script type="text/javascript" src="lib/zoom.min.js"></script>
+    <script type="text/javascript" src="lib/bookshelf.js"></script>
+</head>
+<body>
+
+<div class="splash">
+    <div class="center">
+        <div class="details">
+            <i class="turnjs"></i>
+            <h1>Make a flip book with HTML5</h1>
+            <ul>
+                <li>Works on most browsers and devices</li>
+                <li>Simple and clean API</li>
+                <li title="Minimized and Gzipped">Lightweight, 10K</li>
+            </ul>
+            <p class="production">
+                <a href="http://turnjs.com/confirm-download/5396f77366f55/turnjs4.zip" class="get-now">Download</a>
+            </p>
+            <div class="options">
+                <p><i class="icon github"></i> <a href="http://www.github.com/blasten/turn.js">Fork on GitHub</a> </p>
+            </div>
+        </div>
+
+        <div class="bookshelf">
+            <div class="shelf">
+                <div class="row-1">
+                    <div class="loc">
+                        <div> <div class="sample thumb1" sample="steve-jobs"></div> </div>
+                        <div> <div class="sample thumb2" sample="html5"></div> </div>
+                        <div> <div class="sample thumb3" sample="docs"></div> </div>
+                    </div>
+                </div>
+                <div class="row-2">
+                    <div class="loc">
+                        <div> <div class="sample thumb4" sample="magazine1"></div> </div>
+                        <div> <div class="sample thumb5" sample="magazine2"></div> </div>
+                        <div> <div class="sample thumb6" sample="magazine3"></div> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="suggestion">&uarr; Click a book or magazine to see turn.js in action</div>
+        </div>
+
+        <!-- Samples-->
+        <div class="samples">
+            <div class="bar">
+                <div class="share">
+                    <i class="icon table-contents" title="Table of contents"></i>
+                    <i class="icon zoom-in" title="Zoom in"></i>
+                    <i class="icon share-facebook" title="Share on facebook"></i>
+                    <i class="icon share-twitter" title="Share on Twitter"></i>
+                    <i class="icon share-plus" title="Share on G+"></i>
+                    <i class="icon share-pinterest" title="Share on Pinterest"></i>
+                </div>
+                <a class="icon quit"></a>
+            </div>
+            <div id="book-wrapper">
+                <div id="book-zoom"></div>
+            </div>
+            <div id="slider-bar" class="turnjs-slider">
+                <div id="slider"></div>
+            </div>
+
+        </div>
+
+        <!-- End samples -->
+
+    </div>
+    <div class="gradient"></div>
+</div>
+
+<!--
+<div class="bookshelf-row">
+	<div class="sample thumb1" sample="steve-jobs"></div>
+	<div class="sample thumb4" sample="magazine1"></div>
+	<div class="sample thumb5" sample="magazine2"></div>
+	<div class="sample thumb6" sample="magazine3"></div>
+</div>
+-->
+
+<div class="navigation">
+    <nav>
+        <ul>
+            <li><a href="#getting-started">Getting Started</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#api">Documentation</a></li>
+            <li><a href="#licensing">Licensing</a></li>
+            <li><a href="#about">About</a></li>
+            <a class="icon go-up" href="#"></a>
+        </ul>
+    </nav>
+</div>
+
+<div class="content">
+
+    <section id="section-getting-started">
+        <p class="headline"><b>Turn.js</b> is a JavaScript library that will make your content look like a real book or magazine using all the advantages of HTML5.
+            The web is getting beautiful with new user interfaces based in HTML5; turn.js is the best fit for a magazine, book or catalog based in HTML5.<p>
+        <!--googleoff: all-->
+        <div class="simple-sample">
+
+            <h3>Let's code</h3>
+            <div class="code">
+<pre>
+<span class="tag">&lt;div id=<span class="string">"flipbook"</span>&gt;</span>
+	<span class="tag">&lt;div class=<span class="string">"hard"</span>&gt;</span> <span class="text">Turn.js</span> <span class="tag">&lt;/div&gt;</span>
+	<span class="tag">&lt;div class=<span class="string">"hard"</span>&gt;&lt;/div&gt;</span>
+	<span class="tag">&lt;div&gt;</span> <span class="text">Page 1</span> <span class="tag">&lt;/div&gt;</span>
+	<span class="tag">&lt;div&gt;</span> <span class="text">Page 2</span> <span class="tag">&lt;/div&gt;</span>
+	<span class="tag">&lt;div&gt;</span> <span class="text">Page 3</span> <span class="tag">&lt;/div&gt;</span>
+	<span class="tag">&lt;div&gt;</span> Page 4 <span class="tag">&lt;/div&gt;</span>
+	<span class="tag">&lt;div class=<span class="string">"hard"</span>&gt;&lt;/div&gt;</span>
+	<span class="tag">&lt;div class=<span class="string">"hard"</span>&gt;&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+</pre>
+
+<pre>
+<span class="script">&lt;script type=<span class="string">"text/javascript"</span>&gt;</span></span>
+    $(<span class="string">"#flipbook"</span>).turn({
+		width: <span class="number">400</span>,
+		height: <span class="number">300</span>,
+		autoCenter: <span class="string">true</span>
+	});
+<span class="script">&lt;/script&gt;</span>
+</pre>
+            </div>
+
+            <div class="sample" id="sample-viewer">
+                <a>Run code</a>
+            </div>
+        </div>
+
+
+        <!--googleon: all-->
+    </section>
+
+    <section id="section-features">
+        <h3>Features</h3>
+        <ul>
+            <li>&#10003; &nbsp; Works on iPad and iPhone.</li>
+            <li>&#10003; &nbsp; Simple, beautiful and powerful API.</li>
+            <li>&#10003; &nbsp; Allows to load pages dynamically through Ajax requests.</li>
+            <li>&#10003; &nbsp; Pure HTML5/CSS3 content.</li>
+            <li>&#10003; &nbsp; Two transition effects.</li>
+            <li>&#10003; &nbsp; Works in old browsers such as IE 8 with turn.html4.js</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Requirements</h3>
+        <p>jQuery 1.3 or above.</p>
+    </section>
+
+    <section>
+        <h3>Browser Support</h3>
+        <p class="browser-support">
+            <i class="support safari"></i> <span>Safari 5</span>
+            <i class="support chrome"></i> <span>Chrome 16</span>
+            <i class="support firefox"></i> <span>Firefox 10</span>
+            <i class="support ie"></i> <span>IE 10, 9, 8</span>
+        </p>
+    </section>
+
+    <section>
+        <h3>Devices</h3>
+        <ul>
+            <li>&#10003; &nbsp; All iOS (iPad, iPhone, iPod)</li>
+            <li>&#10003; &nbsp; Android (Chrome for Android)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Improvements</h3>
+        <p>Turn.js 4 includes a set of significant performance improvements on its core.</p>
+        <ul>
+            <li>&#10003; &nbsp; Effects are now quite smoother on the browser platform.</li>
+            <li>&#10003; &nbsp; The new DOM composition guarantees the same performance no matter the amount of pages.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Complements</h3>
+        <p>turn.html4.js - The HTML4 version of turn.js.</p>
+        <p>zoom.js - The new zoom feature of turn.js, <a href="samples/magazine">See a sample</a>.</p>
+        <p>scissors.js - Cuts a page in two parts for turn.js.</p>
+        <p>hash.js - Controls the navigation history using pushState and URI hashes.</p>
+    </section>
+
+    <section id="section-api">
+        <h3>API Documentation</h3>
+        <p>The turn.js API was conveniently built as an UI plugin for jQuery, it provides access to a set of features and allows you to define the user interaction. <br />
+            The complete documentation is <a href="docs/">available here</a>, it's also available in <a href="turnjs4-api-docs.pdf">PDF format</a>.</p>
+        <div class="api-chart">
+            <div class="column">
+                <h4>Options</h4>
+                <ul>
+                    <li><a href="docs/Option:_acceleration">acceleration</a></li>
+                    <li><a href="docs/Option:_autoCenter">autoCenter</a></li>
+                    <li><a href="docs/Option:_direction">direction</a></li>
+                    <li><a href="docs/Option:_display">display</a></li>
+                    <li><a href="docs/Option:_duration">duration</a></li>
+                    <li><a href="docs/Option:_gradients">gradients</a></li>
+                    <li><a href="docs/Option:_height">height</a></li>
+                    <li><a href="docs/Option:_elevation">elevation</a></li>
+                    <li><a href="docs/Option:_page">page</a></li>
+                    <li><a href="docs/Option:_pages">pages</a></li>
+                    <li><a href="docs/Option:_turnCorners">turnCorners</a></li>
+                    <li><a href="docs/Option:_when">when</a></li>
+                    <li><a href="docs/Option:_width">width</a></li>
+                    <li><a href="docs/Option:_zoom">zoom</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h4>Properties</h4>
+                <ul>
+                    <li><a href="docs/Property:_animating">animating</a></li>
+                    <li><a href="docs/Property:_direction">direction</a></li>
+                    <li><a href="docs/Property:_display">display</a></li>
+                    <li><a href="docs/Property:_disabled">disabled</a></li>
+                    <li><a href="docs/Property:_page">page</a></li>
+                    <li><a href="docs/Property:_pages">pages</a></li>
+                    <li><a href="docs/Property:_size">size</a></li>
+                    <li><a href="docs/Property:_options">options</a></li>
+                    <li><a href="docs/Property:_view">view</a></li>
+                    <li><a href="docs/Property:_zoom">zoom</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h4>Methods</h4>
+                <ul>
+                    <li><a href="docs/Method:_addPage">addPage</a></li>
+                    <li><a href="docs/Method:_center">center</a></li>
+                    <li><a href="docs/Method:_destroy">destroy</a></li>
+                    <li><a href="docs/Method:_direction">direction</a></li>
+                    <li><a href="docs/Method:_display">display</a></li>
+                    <li><a href="docs/Method:_disable">disable</a></li>
+                    <li><a href="docs/Method:_hasPage">hasPage</a></li>
+                    <li><a href="docs/Method:_next">next</a></li>
+                    <li><a href="docs/Method:_is">is</a></li>
+                    <li><a href="docs/Method:_page">page</a></li>
+                    <li><a href="docs/Method:_pages">pages</a></li>
+                    <li><a href="docs/Method:_peel">peel</a></li>
+                    <li><a href="docs/Method:_previous">previous</a></li>
+                    <li><a href="docs/Method:_range">range</a></li>
+                    <li><a href="docs/Method:_removePage">removePage</a></li>
+                    <li><a href="docs/Method:_resize">resize</a></li>
+                    <li><a href="docs/Method:_size">size</a></li>
+                    <li><a href="docs/Method:_stop">stop</a></li>
+                    <li><a href="docs/Method:_version">version</a></li>
+                    <li><a href="docs/Method:_zoom">zoom</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h4>Events</h4>
+                <ul>
+                    <li><a href="docs/Event:_end">end</a></li>
+                    <li><a href="docs/Event:_first">first</a></li>
+                    <li><a href="docs/Event:_last">last</a></li>
+                    <li><a href="docs/Event:_missing">missing</a></li>
+                    <li><a href="docs/Event:_start">start</a></li>
+                    <li><a href="docs/Event:_turning">turning</a></li>
+                    <li><a href="docs/Event:_turning">turned</a></li>
+                    <li><a href="docs/Event:_zooming">zooming</a></li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <h4>CSS Classes</h4>
+                <ul>
+                    <li><a href="docs/Class:_.end">.even</a></li>
+                    <li><a href="docs/Class:_.fixed">.fixed</a></li>
+                    <li><a href="docs/Class:_.hard">.hard</a></li>
+                    <li><a href="docs/Class:_.odd">.odd</a></li>
+                    <li><a href="docs/Class:_.own-size">.own-size</a></li>
+                    <li><a href="docs/Class:_.page">.page</a></li>
+                    <li><a href="docs/Class:_.p">.p[0-9]+</a></li>
+                    <li><a href="docs/Class:_.shadow">.shadow</a></li>
+                    <li><a href="docs/Class:_.sheet">.sheet</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h3>Support</h3>
+        <p> You can browse all issues on <a href="https://github.com/blasten/turn.js/issues" target="_blank">GitHub</a>. <br />
+            If you'd rather report issues using your email, you could contact us to: <a href="mailto:support@turnjs.com">support@turnjs.com</a></p>
+    </section>
+
+    <section id="section-licensing">
+        <h3>Licensing</h3>
+        <p>
+            The turn.js project is released under the BSD license and it's available on <a href="http://github.com/blasten/turn.js" target="_blank">GitHub</a>. This license doesn't include <a href="features.pdf" target="_blank">features of the 4th release</a>.
+        </p>
+    </section>
+
+    <section id="section-about">
+        <h3>About</h3>
+        <p>
+            Hello Everyone, <br /><br />
+            I'm Emmanuel Garc&iacute;a, a front-end developer from Venezuela, who loves to push the web forward with new technologies.
+        </p>
+
+        <p>I look forward to releasing new projects. One of those will allow you to split HTML content into pages depending on the size of the pages. While loading pages with turn.js, this library would have an infinity potential. Think about detecting the number of pages automatically, creating a table of contents that knows where every page is, and adding functions like font size.</p>
+
+        <p>I'm also interested in using pdf.js and node.js for a new library that will convert pdf files into pure HTML5 (text/CSS3) files to provide content for the frontend with turn.js.</p>
+
+        <p> Follow me on Twitter: <a href="http://www.twitter.com/blasten" target="_blank">@blasten</a> or
+            <a href="http://www.github.com/blasten" target="_blank">Github</a> <br />
+            Reach me out: <a href="mailto:blasten@gmail.com">blasten@gmail.com</a> </p>
+    </section>
+
+</div>
+
+<footer>
+    &copy;2012 All rights reserved - A production of <a href="http://twitter.com/blasten" target="_blank">@blasten</a>
+</footer>
+
+<script type="text/javascript">
+
+    //1953 360
+
+    yepnope({
+        test : Modernizr.csstransforms,
+        nope : ['lib/turn.html4.min.js', 'css/jquery.ui.html4.css']
+    });
+
+    $('#sample-viewer a').click(function() {
+        $(this).hide();
+        yepnope({
+            test : Modernizr.csstransforms,
+            load: ['samples/basic/js/basic.js', 'samples/basic/css/basic.css'],
+            nope: 'samples/basic/css/basic.html4.css?'+Math.round(Math.random()*100)
+        });
+    });
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-28960832-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+</body>
+</html>

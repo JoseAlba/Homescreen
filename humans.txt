@@ -1,0 +1,12 @@
+/* Foundation was made by ZURB, an interaction design and design strategy firm in Campbell, CA */
+/* zurb.com */
+/* humanstxt.org */
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: jQuery, Orbit, Reveal
+  Software: Sublime, Git, Sass
+
+I am beginning my third year in honours Computer Science at the University of Windsor, and I am concentrating in artificial intelligence, while excelling in my experimental learning opportunities. I have received multiple honours awards for computer science coursework and continuing to maintain an outstanding GPA. I have experience in Java, as well as a large number of programming languages.
+I am extremely passionate about computer science, and truly love my program. I’m an extremely hardworking student, who always puts his full effort, which should be reflected by my average. Computer science gives me great satisfaction because it allows me to create incredible innovations, which could positively impact the world. Some enter computer science for the money, but I truly want to make a difference. That is why I am entering the incredibly innovative field of artificial intelligence.
+As a co-op student I hope to gain industry relevant work experience. I am driven and independent, and can work effectively in a group environment. I have superb customer relations skills, and can handle conflict effectively. I can multitask and effectively prioritize to accomplish objectives with a positive attitude and strong work ethic. I’m open-minded to new learning experiences and would like the opportunity to gain industry-specific knowledge.
