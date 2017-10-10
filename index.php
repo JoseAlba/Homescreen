@@ -72,7 +72,7 @@
                   &::-webkit-scrollbar {
                     display: none;
                   }" id="menu"></iframe>
-            <iframe name="right-side" src="freelance" frameborder=0 style="  padding: 0;
+            <iframe name="right-side" src="about" frameborder=0 style="  padding: 0;
                   margin: 0;
                   border: none;
 

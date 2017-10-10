@@ -37,18 +37,7 @@
                 <h4 class="text-center">Bon Voyage<br><small>(Personal Project)</small></h4>
 
                 <h5 class="text-center">
-                    This idea is an all in one travelling application that is for both IOS and Android Play Store.
-                    This idea is suppose to implement all the required necessities required to travel such as an Air BnB and Uber. It
-                    is an all in one application that lets everyday people travel by using their phone. For example, lets say someone
-                    who was visiting Windsor had this application downloaded on their phone, they would be able to visit popular
-                    sites from Windsor like the casino and the waterfront.
-                    It would make it easy to navigate to see all tbe special locations in Windsor and if you are indeed
-                    interested to go to that location, you can use our build in Uber app. (this is just my though) In addition, you can
-                    use coupons we provide on our app at specific location, such as restaurants, museum, or parks. This application
-                    would be unique as it is an all-in-one application that would make it easier for students to travel and enjoy their
-                    lives. This idea is also a unique idea because Uber and Air Bnb is just starting to become popular among the
-                    world; so by combining both applications into one app it would make it a lot easier for the people.
-
+                    This idea is an all-in-one travelling application that is available on both IOS and Android. This app will implement all the required necessities required to travel, such as accommodation and transport. For example, someone who was visiting Windsor could use this app to visit popular sites from Windsor like the casino and the waterfront by making transportation simple, and then book accommodations. In addition, you can use coupons we provide on our app at specific locations, such as restaurants, museum, or parks. This will be how the app produces revenue, through company promotions. This application would be unique as it is an all-in-one application that would make it easier for students to travel and enjoy their lives. This idea is also a unique because it utilizes both Uber and Airbnb API in one platform.
                 </h5>
 
             </div>
