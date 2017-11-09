@@ -33,12 +33,10 @@
 
 <body>
 
-<!--    <button onclick="switchFrame('picture_slider/circle.html')">Try it</button>-->
 
 
-    <div id="container" cf-form></div>
-        <!-- Conversational Form will auto-run because of attribute "cf-form" -->
-        <form id="form" method="post" id="my_form" cf-form>
+    <div id="container" cf-form>
+        <form id="form" method="post" id="my_form" action="mailto:albaj@uwindsor.ca" cf-form>
 
             <input id="intro"
                    type="text"
@@ -91,35 +89,35 @@
 
             <input id="about"
                    type="radio"
-                   cf-questions="This is about"
+                   cf-questions="My name is Jose Alba and I love creating 'things' with my abilities in Computer Science"
                    name="about"
                    cf-conditional-category-path="about">
             <label for="about">Okay</label>
 
             <input id="projects"
                    type="radio"
-                   cf-questions="This is projects"
+                   cf-questions="My projects range from simple Websites to Games and Evolutionary Programming"
                    name="projects"
                    cf-conditional-category-path="projects">
             <label for="projects">Okay</label>
 
             <input id="experience"
                    type="radio"
-                   cf-questions="This is experience"
+                   cf-questions="I have experience working as a teaching assistant, research assistant, and Information Technologist. I just attained a Software Engineering Internship with Nokia and am currently searching for another summer internship"
                    name="experience"
                    cf-conditional-category-path="experience">
             <label for="experience">Okay</label>
 
             <input id="future_projects"
                    type="radio"
-                   cf-questions="This is future projects"
+                   cf-questions="I really want to play around with AR - Augmented Reality "
                    name="future_projects"
                    cf-conditional-category-path="future_projects">
             <label for="future_projects">Okay</label>
 
             <input id="freelance"
                    type="radio"
-                   cf-questions="This is freelance"
+                   cf-questions="If you need me to make you a website feel free to contact me. You can pay me either by Paypal or Cryptocurrencies"
                    name="freelance"
                    cf-conditional-category-path="freelance">
             <label for="freelance">Okay</label>
@@ -212,56 +210,56 @@
 
             <input id="amalfi"
                    type="radio"
-                   cf-questions="This is amalfi"
+                   cf-questions="I walked for two days on this coast and slept in the beach."
                    name="amalfi"
                    cf-conditional-image-europe="amalfi">
             <label for="amalfi">Okay</label>
 
             <input id="barcelona"
                    type="radio"
-                   cf-questions="This is barcelona"
+                   cf-questions="I lost my scuba diving virginity in Barcelona"
                    name="barcelona"
                    cf-conditional-image-europe="barcelona">
             <label for="barcelona">Okay</label>
 
             <input id="budapest"
                    type="radio"
-                   cf-questions="This is budapest"
+                   cf-questions="A city split in half"
                    name="budapest"
                    cf-conditional-image-europe="budapest">
             <label for="budapest">Okay</label>
 
             <input id="cinque_terre"
                    type="radio"
-                   cf-questions="This is cinque_terre"
+                   cf-questions="I jumped off a cliff here right after somebody else attempted this and they hit their legs with the rocks at the bottom"
                    name="cinque_terre"
                    cf-conditional-image-europe="cinque_terre">
             <label for="cinque_terre">Okay</label>
 
             <input id="edinburgh"
                    type="radio"
-                   cf-questions="This is edinburgh"
+                   cf-questions="Let's just say I celebrated St.Patricks day with a group of international students in Edinburgh"
                    name="edinburgh"
                    cf-conditional-image-europe="edinburgh">
             <label for="edinburgh">Okay</label>
 
             <input id="london"
                    type="radio"
-                   cf-questions="This is london"
+                   cf-questions="I called this place home for 6 months and would always find something new to do everyday"
                    name="london"
                    cf-conditional-image-europe="london">
             <label for="london">Okay</label>
 
             <input id="sintra"
                    type="radio"
-                   cf-questions="This is sintra"
+                   cf-questions="A not so hidden castle"
                    name="sintra"
                    cf-conditional-image-europe="sintra">
             <label for="sintra">Okay</label>
 
             <input id="zante"
                    type="radio"
-                   cf-questions="This is zante"
+                   cf-questions="Before going to Zante it was on my bucket list since I was a child. Once in a lifetime experience"
                    name="zante"
                    cf-conditional-image-europe="zante">
             <label for="zante">Okay</label>
@@ -279,56 +277,56 @@
 
             <input id="antelope"
                    type="radio"
-                   cf-questions="This is antelope"
+                   cf-questions="Antelope Canyon bends time with sand"
                    name="antelope"
                    cf-conditional-image-north-america="antelope">
             <label for="antelope">Okay</label>
 
             <input id="canyonlands"
                    type="radio"
-                   cf-questions="This is canyonlands"
+                   cf-questions="Where every country movie or song is filmed at"
                    name="canyonlands"
                    cf-conditional-image-north-america="canyonlands">
             <label for="canyonlands">Okay</label>
 
             <input id="colorado"
                    type="radio"
-                   cf-questions="This is colorado"
+                   cf-questions="Climbed a 14er"
                    name="colorado"
                    cf-conditional-image-north-america="colorado">
             <label for="colorado">Okay</label>
 
             <input id="enchantments"
                    type="radio"
-                   cf-questions="This is enchantments"
+                   cf-questions="Enchantments has been the best hike I have ever done. Got to witness a variety of differet biomes in the span of 1 hard day"
                    name="enchantments"
                    cf-conditional-image-north-america="enchantments">
             <label for="enchantments">Okay</label>
 
             <input id="glacier"
                    type="radio"
-                   cf-questions="This is glacier"
+                   cf-questions="Almost ran into a grizzly bear climbing this mountain"
                    name="glacier"
                    cf-conditional-image-north-america="glacier">
             <label for="glacier">Okay</label>
 
             <input id="lake_louise"
                    type="radio"
-                   cf-questions="This is lake_louise"
+                   cf-questions="A must for those who love to hike mountains."
                    name="lake_louise"
                    cf-conditional-image-north-america="lake_louise">
             <label for="lake_louise">Okay</label>
 
             <input id="moraine"
                    type="radio"
-                   cf-questions="This is moraine"
+                   cf-questions="This was the most dangerious hike I have ever done. A must for those who want a really challenging hike "
                    name="moraine"
                    cf-conditional-image-north-america="moraine">
             <label for="moraine">Okay</label>
 
             <input id="utah"
                    type="radio"
-                   cf-questions="This is utah"
+                   cf-questions="Lovely place but I highly recommend you rent a car with AC and have water at all times"
                    name="utah"
                    cf-conditional-image-north-america="utah">
             <label for="utah">Okay</label>
@@ -387,35 +385,35 @@
 
             <input id="cryptocurrency_reply"
                    type="radio"
-                   cf-questions="This is cryptocurrency"
+                   cf-questions="If you are canadian and want to start invesing in cryptocurrency open an account with this link https://www.quadrigacx.com/?ref=cpckvsb0dc5rgdo5s1zfa53m"
                    name="cryptocurrency"
                    cf-conditional-investments="cryptocurrency">
             <label for="cryptocurrency_reply">Okay</label>
 
             <input id="FOREX_reply"
                    type="radio"
-                   cf-questions="This is FOREX"
+                   cf-questions="I'm trying to get into trading in FOREX using Metatrader4"
                    name="FOREX"
                    cf-conditional-investments="FOREX">
             <label for="FOREX_reply">Okay</label>
 
             <input id="stock_market_reply"
                    type="radio"
-                   cf-questions="This is stock_market"
+                   cf-questions="I have invest in the stock market for the two years now and half made a 300% ROI"
                    name="stock_market"
                    cf-conditional-investments="stock_market">
             <label for="stock_market_reply">Okay</label>
 
             <input id="real_estate_reply"
                    type="radio"
-                   cf-questions="This is real_estate"
+                   cf-questions="My next goal is to buy a house in the Waterloo area "
                    name="real_estate"
                    cf-conditional-investments="real_estate">
             <label for="real_estate_reply">Okay</label>
 
             <input id="etc_reply"
                    type="radio"
-                   cf-questions="This is etc"
+                   cf-questions="Another way I have thought of making money is by selling items on Amazon or making a website for my fathers business that automates transactions for him"
                    name="etc"
                    cf-conditional-investments="etc">
             <label for="etc_reply">Okay</label>
@@ -434,21 +432,21 @@
 
             <input id="technology_reply"
                    type="radio"
-                   cf-questions="This is technology"
+                   cf-questions="I truly love technology and love playing around with it. I want to buy Myo and start a project with it"
                    name="technology"
                    cf-conditional-bought="technology">
             <label for="technology_reply">Okay</label>
 
             <input id="partying_reply"
                    type="radio"
-                   cf-questions="This is partying"
+                   cf-questions="Lets just say I have partied in Pacha, Ibiza the the most popular club in Europe and possibly the world"
                    name="partying"
                    cf-conditional-bought="partying">
             <label for="partying_reply">Okay</label>
 
             <input id="food_reply"
                    type="radio"
-                   cf-questions="This is food"
+                   cf-questions="I really do spend too much money on food. I'm currently addicted to bubble tea"
                    name="food"
                    cf-conditional-bought="food">
             <label for="food_reply">Okay</label>
@@ -456,7 +454,7 @@
 
             <input id="no_money"
                    type="radio"
-                   cf-questions="This is no money"
+                   cf-questions="You should start investing money instead of spending it all. I have a websites which demonstrates how you can make money even while studying http://financialjourney.me/ "
                    name="no_money"
                    cf-conditional-money="no_money">
             <label for="no_money">Okay</label>
@@ -582,34 +580,7 @@
             <button type="submit" class="btn btn-default">Submit</button>
 
         </form>
-
-
-
-
-
-
-
-<!--        --><?php
-//
-//        date_default_timezone_set('America/Toronto');
-//        $timestamp =  date("d/m/Y h:i:s", time());
-//
-//        echo <<<ZZEOF
-//
-//        <fieldset>
-//            <label for="company">Company</label>
-//            <input cf-questions="Wow, it's
-//ZZEOF;
-//        echo getCurrentTime();
-//echo <<<ZZEOF
-//where I'm from. I'" type="text" class="form-control" name="company" id="company" tabindex="-1">
-//        </fieldset>
-//ZZEOF;
-//
-//?>
-<!--        <button type="submit" class="btn btn-default">Submit</button>-->
-    </form>
-
+    </div>
 </body>
 </html>
 

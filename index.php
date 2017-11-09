@@ -133,11 +133,12 @@
                                         </clipPath>
                                     </defs>
 
-                                    <image height='800px' width="800px" clip-path="url(#cd-image-2)" xlink:href="img/picture_slider/img_1.jpg"></image>
+                                    <image height='800px' width="800px" clip-path="url(#cd-image-2)" xlink:href="img/picture_slider/img_2.jpg"></image>
                                     <use xlink:href="#cd-morphing-path-2" class="cover-layer" />
                                 </svg>
                             </div> <!-- .svg-wrapper -->
                         </li>
+
 
                         <li class="right">
                             <div class="svg-wrapper">
@@ -149,44 +150,35 @@
                                         </clipPath>
                                     </defs>
 
-                                    <image height='800px' width="800px" clip-path="url(#cd-image-3)" xlink:href="img/picture_slider/img_1.jpg"></image>
+                                    <image height='800px' width="800px" clip-path="url(#cd-image-3)" xlink:href="img/picture_slider/img_3.jpg"></image>
                                     <use xlink:href="#cd-morphing-path-3" class="cover-layer" />
                                 </svg>
                             </div> <!-- .svg-wrapper -->
                         </li>
 
-                        <li>
-                            <div class="svg-wrapper">
-                                <svg viewBox="0 0 800 800">
-                                    <title>Animated SVG</title>
-                                    <defs>
-                                        <clipPath id="cd-image-4">
-                                            <path id="cd-morphing-path-4" d="M795.796,389.851L410.149,4.204c-5.605-5.605-14.692-5.605-20.297,0L4.204,389.851 c-5.605,5.605-5.605,14.692,0,20.297l385.648,385.648c5.605,5.605,14.692,5.605,20.297,0l385.648-385.648 C801.401,404.544,801.401,395.456,795.796,389.851z"/>
-                                        </clipPath>
-                                    </defs>
-
-                                    <image height='800px' width="800px" clip-path="url(#cd-image-4)" xlink:href="img/picture_slider/img_1.jpg"></image>
-                                    <use xlink:href="#cd-morphing-path-4" class="cover-layer" />
-                                </svg>
-                            </div> <!-- .svg-wrapper -->
-                        </li>
+                        <?php
+                        for($c = 4; $c < 27; $c++) {
+                            echo <<<ZZEOF
 
                         <li>
                             <div class="svg-wrapper">
                                 <svg viewBox="0 0 800 800">
                                     <title>Animated SVG</title>
                                     <defs>
-                                        <clipPath id="cd-image-5">
-                                            <path id="cd-morphing-path-5" d="M795.796,389.851L410.149,4.204c-5.605-5.605-14.692-5.605-20.297,0L4.204,389.851 c-5.605,5.605-5.605,14.692,0,20.297l385.648,385.648c5.605,5.605,14.692,5.605,20.297,0l385.648-385.648 C801.401,404.544,801.401,395.456,795.796,389.851z"/>
+                                        <clipPath id="cd-image-$c">
+                                            <path id="cd-morphing-path-$c" d="M795.796,389.851L410.149,4.204c-5.605-5.605-14.692-5.605-20.297,0L4.204,389.851 c-5.605,5.605-5.605,14.692,0,20.297l385.648,385.648c5.605,5.605,14.692,5.605,20.297,0l385.648-385.648 C801.401,404.544,801.401,395.456,795.796,389.851z"/>
                                         </clipPath>
                                     </defs>
 
-                                    <image height='800px' width="800px" clip-path="url(#cd-image-5)" xlink:href="img/picture_slider/img_1.jpg"></image>
-                                    <use xlink:href="#cd-morphing-path-5" class="cover-layer" />
+                                    <image height='800px' width="800px" clip-path="url(#cd-image-$c)" xlink:href="img/picture_slider/img_$c.jpg"></image>
+                                    <use xlink:href="#cd-morphing-path-$c" class="cover-layer" />
                                 </svg>
-                            </div> <!-- .svg-wrapper -->
+                            </div>
                         </li>
-                    </ul>
+ZZEOF;
+                        }
+
+                        ?>
 
                     <nav>
                         <ul class="navigation">
