@@ -19,7 +19,7 @@ body {
 }
 
 a {
-  color: #9acd91;
+  color: #465f79;
   text-decoration: none;
 }
 
@@ -51,7 +51,7 @@ Stretchy Nav style - common to:
   width: 60px;
   height: 60px;
   border-radius: 30px;
-  background: #9acd91;
+  background: #465f79;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   -webkit-transition: height 0.2s, box-shadow 0.2s;
   -moz-transition: height 0.2s, box-shadow 0.2s;

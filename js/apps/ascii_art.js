@@ -3,7 +3,6 @@
  */
 var domAnimator = new DomAnimator();
 
-// Awesome monkeys from http://www.geocities.ws/SoHo/7373/zoo.html
 
 var frame1 =[
     '   |__                     ',

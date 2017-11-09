@@ -220,8 +220,8 @@ ZZEOF;
     html5_js(
         array('js/vendor/jquery.js',  'js/navigation/main.js',
              'js/constellation/constellation.js', 'js/constellation/zepto.min.js',
-            'js/picture_slider/jquery-3.0.0.min.js'
-//            'js/apps/ascii_art.js'
+            'js/picture_slider/jquery-3.0.0.min.js',
+            'js/apps/ascii_art.js'
         )
     );
 
